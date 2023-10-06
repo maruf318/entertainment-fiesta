@@ -4,6 +4,9 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
+        <NavLink to={"/"}>Home</NavLink>
+      </li>
+      <li>
         <NavLink to={"/Login"}>Login</NavLink>
       </li>
       <li>
@@ -12,7 +15,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -38,19 +41,10 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="btn text-black btn-ghost normal-case text-xl">daisyUI</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {/* <li>
-            <a>Item 1</a>
-          </li>
-          
-          <li>
-            <a>Item 3</a>
-          </li> */}
-          {navLinks}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
         <div className="avatar">
