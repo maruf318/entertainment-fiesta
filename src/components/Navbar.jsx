@@ -52,7 +52,7 @@ const Navbar = () => {
             <img src="../../public/icons8-user.gif" />
           </div>
         </div>
-        <a className="btn">Sign In</a>
+        <a className="btn text-[#CB0C9F]">Sign In</a>
       </div>
     </div>
   );
