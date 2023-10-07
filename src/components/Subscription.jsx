@@ -278,7 +278,7 @@ const Subscription = () => {
                 font-semibold
                 text-pink-900
                 bg-transparent
-                bg-pink-200
+                bg-pink-400
                 rounded-md
                 text-center
                 p-4
@@ -562,7 +562,7 @@ const Subscription = () => {
               <div className="w-full md:w-1/2 lg:w-1/3 px-4">
                 <div
                   className="
-             bg-white
+                  bg-purple-200
              rounded-xl
              relative
              z-10
@@ -627,14 +627,17 @@ const Subscription = () => {
                 block
                 text-base
                 font-semibold
-                text-white
-                bg-primary
-                border border-primary
+               
+                text-pink-800
+                
                 rounded-md
                 text-center
                 p-4
                 hover:bg-opacity-90
+                hover:bg-pink-300
+                hover:text-white
                 transition
+                bg-pink-400
                 "
                   >
                     Choose Premium
@@ -913,7 +916,7 @@ const Subscription = () => {
               <div className="w-full md:w-1/2 lg:w-1/3 px-4">
                 <div
                   className="
-             bg-white
+                  bg-purple-200
              rounded-xl
              relative
              z-10
@@ -972,16 +975,18 @@ const Subscription = () => {
                     href="javascript:void(0)"
                     className="
                 w-full
+                bg-pink-400
+                text-pink-800
                 block
                 text-base
                 font-semibold
-                text-primary
+                
                 bg-transparent
                 border border-[#D4DEFF]
                 rounded-md
                 text-center
                 p-4
-                hover:text-white hover:bg-primary hover:border-primary
+                hover:text-white hover:bg-pink-300 
                 transition
                 "
                   >
