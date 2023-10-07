@@ -5,6 +5,9 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Error from "../components/Error";
 import CardDetails from "../components/CardDetails";
+import PrivateRoute from "./PrivateRoute";
+import Faq from "../pages/Faq";
+import Support from "../pages/Support";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,8 +28,20 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
+        path: "/faq",
+        element: <Faq></Faq>,
+      },
+      {
+        path: "/support",
+        element: <Support />,
+      },
+      {
         path: "/products/:id",
-        element: <CardDetails></CardDetails>,
+        element: (
+          <PrivateRoute>
+            <CardDetails></CardDetails>
+          </PrivateRoute>
+        ),
         loader: () => fetch("/data.json"),
       },
     ],

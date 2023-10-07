@@ -1,12 +1,19 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
+  const { logOut, user } = useContext(AuthContext);
+  console.log(user);
+  const handleLogOut = () => {
+    logOut().then().catch();
+  };
   const navLinks = (
     <>
       <li>
         <NavLink
           className={
-            "bg-transparent border-purple-300 border hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F] font-bold"
+            "bg-transparent border-t-4 hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F] font-bold"
           }
           to={"/"}
         >
@@ -16,7 +23,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={
-            "bg-transparent border-purple-300 border hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F]  font-bold"
+            "bg-transparent border-t-4 hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F]  font-bold"
           }
           to={"/Login"}
         >
@@ -26,13 +33,41 @@ const Navbar = () => {
       <li>
         <NavLink
           className={
-            "bg-transparent border-purple-300 border hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F] font-bold"
+            "bg-transparent border-t-4 hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F] font-bold"
           }
-          to={"/register"}
+          to={"/events"}
         >
-          Register
+          Events
         </NavLink>
       </li>
+      {user ? (
+        <li>
+          <NavLink
+            className={
+              "bg-transparent border-t-4 hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F] font-bold"
+            }
+            to={"/faq"}
+          >
+            FAQ
+          </NavLink>
+        </li>
+      ) : (
+        ""
+      )}
+      {user ? (
+        <li>
+          <NavLink
+            className={
+              "bg-transparent border-t-4 hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F] font-bold"
+            }
+            to={"/support"}
+          >
+            Support
+          </NavLink>
+        </li>
+      ) : (
+        ""
+      )}
     </>
   );
   return (
@@ -79,12 +114,35 @@ const Navbar = () => {
       <div className="navbar-end space-x-3">
         <div className="avatar">
           <div className="w-12 rounded-full ">
-            <img src="../../public/icons8-user.gif" />
+            {user?.photoURL ? (
+              <img src={user.photoURL} />
+            ) : (
+              <img src="../../public/icons8-user.gif" />
+            )}
+            {/* <img src="../../public/icons8-user.gif" /> */}
           </div>
         </div>
-        <Link to={"/login"}>
+        {user ? (
+          <button
+            onClick={handleLogOut}
+            className="btn bg-transparent text-[#CB0C9F]"
+          >
+            LOGOUT
+          </button>
+        ) : (
+          <Link to={"/login"}>
+            <a className="btn bg-transparent text-[#CB0C9F]">Sign In</a>
+          </Link>
+        )}
+        {/* <Link to={"/login"}>
           <a className="btn bg-transparent text-[#CB0C9F]">Sign In</a>
         </Link>
+        <button
+          onClick={handleLogOut}
+          className="text-white border border-white"
+        >
+          LOGOUT
+        </button> */}
       </div>
     </div>
   );
