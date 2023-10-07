@@ -2,6 +2,8 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "../components/Banner";
 
 import Cards from "../components/Cards";
+import Team from "../components/Team";
+import Subscription from "../components/Subscription";
 
 const Home = () => {
   const services = useLoaderData();
@@ -9,11 +11,20 @@ const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <h2 className="text-2xl text-center my-6">Our services</h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
-        {services.map((service) => (
-          <Cards key={service.id} service={service}></Cards>
-        ))}
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl text-center font-bold my-6 text-white">
+          Our services
+        </h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 ">
+          {services.map((service) => (
+            <Cards key={service.id} service={service}></Cards>
+          ))}
+        </div>
+        <Subscription></Subscription>
+        <h2 className="text-4xl text-center text-white font-bold mb-8">
+          Our Team
+        </h2>
+        <Team></Team>
       </div>
     </div>
   );

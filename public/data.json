@@ -11,55 +11,55 @@
     "service_name": "Theater and Performing Arts",
     "price": "$40",
     "description": "Step into a realm of drama, artistry, and emotion with our Theater and Performing Arts events. Be captivated by the talents of seasoned actors as they bring stories to life on stage. From thought-provoking dramas to lively musicals, our performances promise to transport you to different worlds and evoke a range of emotions. Feel the magic of the theater, where every seat is a front-row experience, and the applause is a standing ovation waiting to happen.",
-    "image_url": "https://i.ibb.co/DYgN4W5/sam-moghadam-khamseh-bu-7-B-G1e-Wg-unsplash.jpg"
+    "image_url": "https://i.ibb.co/9n7HwJx/yiran-ding-Tmv-SImv-V7v-A-unsplash.jpg"
   },
   {
     "id": 3,
     "service_name": "Film Screenings and Premieres",
     "price": "$20",
     "description": "Experience the magic of cinema with our Film Screenings and Premieres. Be the first to witness cinematic excellence as we showcase both indie gems and blockbuster hits. Dive into the world of storytelling, explore new horizons of cinema, and meet filmmakers and actors in exclusive premieres. Get ready for red carpet events that bring the glitz and glamour of Hollywood to your city, making you feel like a true star.",
-    "image_url": "https://i.ibb.co/DYgN4W5/sam-moghadam-khamseh-bu-7-B-G1e-Wg-unsplash.jpg"
+    "image_url": "https://i.ibb.co/xL1t4v6/jakob-owens-ZOtnm-YS0-JVg-unsplash.jpg"
   },
   {
     "id": 4,
     "service_name": "Comedy Shows",
     "price": "$25",
     "description": "Prepare for an evening filled with laughter at our Comedy Shows. Our talented comedians will leave you in splits, guaranteeing a night full of humor and joy. Whether you're a fan of stand-up, improv, or slapstick, our comedians will tickle your funny bone and brighten your day. Get ready for an uproarious night of comedy that promises not only to make you laugh but also to create lasting, light-hearted memories.",
-    "image_url": "https://i.ibb.co/DYgN4W5/sam-moghadam-khamseh-bu-7-B-G1e-Wg-unsplash.jpg"
+    "image_url": "https://i.ibb.co/cyZsZPY/call-me-fred-969-TUss-R2-S4-unsplash.jpg"
   },
   {
     "id": 5,
     "service_name": "Sports Events",
     "price": "$30",
     "description": "Feel the adrenaline rush at our Sports Events. From the roar of the crowd to the thrill of victory, immerse yourself in the world of competitive sports. Witness thrilling matches and championships, cheer for your favorite teams, and experience the unity that sports bring to fans of all ages. Share the excitement with fellow enthusiasts, and be part of the heart-pounding moments that define the spirit of competition.",
-    "image_url": "https://i.ibb.co/DYgN4W5/sam-moghadam-khamseh-bu-7-B-G1e-Wg-unsplash.jpg"
+    "image_url": "https://i.ibb.co/y6Vm8YM/abigail-keenan-8-s5-Qu-UBty-M-unsplash.jpg"
   },
   {
     "id": 6,
     "service_name": "Dance Performances",
     "price": "$35",
     "description": "Discover the power of movement and expression through our Dance Performances. Witness the grace, energy, and storytelling potential of various dance forms. Our dancers will take you on a mesmerizing journey through cultures and emotions, leaving you inspired and enchanted. Experience the art of choreography and feel the rhythm of life through the beauty of dance.",
-    "image_url": "https://i.ibb.co/DYgN4W5/sam-moghadam-khamseh-bu-7-B-G1e-Wg-unsplash.jpg"
+    "image_url": "https://i.ibb.co/z2k0GTd/maick-maciel-v8-C6-Blp-Bz-Y-unsplash.jpg"
   },
   {
     "id": 7,
     "service_name": "Magic Shows",
     "price": "$15",
     "description": "Prepare to be astounded at our Magic Shows. Magicians will mesmerize you with their mind-boggling tricks and illusions. Get ready for a night of wonder and disbelief as you witness feats that defy explanation, leaving you questioning the laws of reality. Brace yourself for a journey into the realm of magic, where the impossible becomes a breathtaking reality.",
-    "image_url": "https://i.ibb.co/DYgN4W5/sam-moghadam-khamseh-bu-7-B-G1e-Wg-unsplash.jpg"
+    "image_url": "https://i.ibb.co/0sMrVXc/sergi-viladesau-dttmeq-FUDSU-unsplash.jpg"
   },
   {
     "id": 8,
     "service_name": "Art Exhibitions",
     "price": "$10",
     "description": "Immerse yourself in the world of creativity at our Art Exhibitions. Explore a diverse range of art forms and appreciate the beauty of various expressions. From traditional paintings to contemporary installations, these exhibitions offer a visual feast that will ignite your imagination and spark meaningful conversations. Witness the evolving landscape of art and discover the voices of artists speaking through their works.",
-    "image_url": "https://i.ibb.co/DYgN4W5/sam-moghadam-khamseh-bu-7-B-G1e-Wg-unsplash.jpg"
+    "image_url": "https://i.ibb.co/M2t2cFh/diane-picchiottino-Sl-Zsd-T9alwo-unsplash.jpg"
   },
   {
     "id": 9,
     "service_name": "Culinary Events",
     "price": "$50",
     "description": "Indulge your taste buds at our Culinary Events. Savor the finest dishes and culinary experiences crafted by renowned chefs. From gourmet tastings to food and wine festivals, these events promise a delectable journey through flavors that will leave your palate delighted. Delve into the world of gastronomy and uncover the secrets behind exquisite dishes that tantalize your senses.",
-    "image_url": "https://i.ibb.co/DYgN4W5/sam-moghadam-khamseh-bu-7-B-G1e-Wg-unsplash.jpg"
+    "image_url": "https://i.ibb.co/ph5fn88/axville-8vhe-Ri6dbaw-unsplash.jpg"
   }
 ]

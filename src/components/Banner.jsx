@@ -1,6 +1,7 @@
+import videoBg from "../assets/pexels_videos_2022396 (1080p).mp4";
 const Banner = () => {
   return (
-    <div className="h-[70vh]">
+    <div className="h-full">
       {/* <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
           <img
@@ -59,7 +60,7 @@ const Banner = () => {
           </div>
         </div>
       </div> */}
-      <div
+      {/* <div
         className="hero h-[70vh]"
         style={{
           backgroundImage:
@@ -76,6 +77,29 @@ const Banner = () => {
               et a id nisi.
             </p>
             <button className="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div> */}
+      <div>
+        <div className="w-full h-full relative">
+          {/* <h3 className="text-4xl">This is login page</h3> */}
+          <div className="absolute w-full h-full bg-[#000000cc]"></div>
+          <video
+            className="object-cover"
+            src={videoBg}
+            autoPlay
+            loop
+            muted
+          ></video>
+          <div className="absolute w-full h-full top-0 flex flex-col justify-center items-center text-white">
+            <h1 className=" text-center text-2xl lg:text-8xl mb-8 font-bold">
+              Experience the Extraordinary
+            </h1>
+            <p className=" text-xs md:text-lg mx-auto text-center border-white border-y-2 p-4">
+              we curate an eclectic mix of concerts, sports events, theater
+              performances, <br /> comedy shows, and more, each promising a
+              one-of-a-kind experience.
+            </p>
           </div>
         </div>
       </div>
