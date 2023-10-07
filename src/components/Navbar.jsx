@@ -65,9 +65,12 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="  text-[#CB0C9F] font-bold normal-case text-xl">
+        <a className=" flex  text-[#CB0C9F] font-bold normal-case text-xl">
+          <span className="flex">
+            <img src="/src/assets/icons8-entertainment-64.png" alt="" />
+          </span>
           ENTERTAINMENT <br />
-          FIESTA
+          FIESTA{" "}
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
