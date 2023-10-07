@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navLinks = (
@@ -76,13 +76,15 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="space-x-3  menu-horizontal px-1">{navLinks}</ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end space-x-3">
         <div className="avatar">
           <div className="w-12 rounded-full ">
             <img src="../../public/icons8-user.gif" />
           </div>
         </div>
-        <a className="btn bg-transparent text-[#CB0C9F]">Sign In</a>
+        <Link to={"/login"}>
+          <a className="btn bg-transparent text-[#CB0C9F]">Sign In</a>
+        </Link>
       </div>
     </div>
   );
