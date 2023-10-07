@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import Cards from "../components/Cards";
 import Team from "../components/Team";
 import Subscription from "../components/Subscription";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const services = useLoaderData();
@@ -26,6 +27,7 @@ const Home = () => {
         </h2>
         <Team></Team>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
