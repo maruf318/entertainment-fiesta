@@ -4,24 +4,48 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to={"/"}>Home</NavLink>
+        <NavLink
+          className={
+            "bg-transparent border-purple-300 border hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F] font-bold"
+          }
+          to={"/"}
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to={"/Login"}>Login</NavLink>
+        <NavLink
+          className={
+            "bg-transparent border-purple-300 border hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F]  font-bold"
+          }
+          to={"/Login"}
+        >
+          Login
+        </NavLink>
       </li>
       <li>
-        <NavLink to={"/register"}>Register</NavLink>
+        <NavLink
+          className={
+            "bg-transparent border-purple-300 border hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F] font-bold"
+          }
+          to={"/register"}
+        >
+          Register
+        </NavLink>
       </li>
     </>
   );
   return (
-    <div className="navbar max-w-7xl mx-auto">
+    <div className="navbar max-w-7xl mx-auto py-6">
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label
+            tabIndex={0}
+            className="btn bg-transparent text-[#CB0C9F] lg:hidden"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-3 w-4"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -29,22 +53,25 @@ const Navbar = () => {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth="2"
+                strokeWidth="5"
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm text-[#CB0C9F] bg-purple-100  dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52"
           >
             {navLinks}
           </ul>
         </div>
-        <a className="btn text-black btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="  text-[#CB0C9F] font-bold normal-case text-xl">
+          ENTERTAINMENT <br />
+          FIESTA
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+        <ul className="space-x-3  menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
         <div className="avatar">
@@ -52,7 +79,7 @@ const Navbar = () => {
             <img src="../../public/icons8-user.gif" />
           </div>
         </div>
-        <a className="btn text-[#CB0C9F]">Sign In</a>
+        <a className="btn bg-transparent text-[#CB0C9F]">Sign In</a>
       </div>
     </div>
   );
