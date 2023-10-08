@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "event_name": "Rocktober Music Festival",
+    "date_of_event": "November 5, 2023",
+    "location": "Central Park, New York",
+    "image_url": "https://i.ibb.co/svTKg6T/danny-howe-bn-D2b-Cvpik-unsplash.jpg",
+    "description": "Join us for a day of non-stop rock music featuring top bands and artists. Don't miss the ultimate rock experience!",
+    "availability": 500,
+    "demand": "High"
+  },
+  {
+    "id": 2,
+    "event_name": "Broadway Premiere - \"The Enchanted Forest\"",
+    "date_of_event": "December 15, 2023",
+    "location": "Broadway Theater, New York",
+    "image_url": "https://i.ibb.co/z2k0GTd/maick-maciel-v8-C6-Blp-Bz-Y-unsplash.jpg",
+    "description": "Be enchanted by this magical new theater production. A must-see for all ages!",
+    "availability": 1200,
+    "demand": "Moderate"
+  },
+  {
+    "id": 3,
+    "event_name": "Comedy with Stand-Up Stars",
+    "date_of_event": "October 20, 2023",
+    "location": "Comedy Club, Los Angeles",
+    "image_url": "https://i.ibb.co/gjb96BW/michel-grolet-NBRNK4-XC1k8-unsplash.jpg",
+    "description": "Get ready to laugh your heart out with the funniest comedians in town. A night of pure hilarity!",
+    "availability": 750,
+    "demand": "High"
+  },
+  {
+    "id": 4,
+    "event_name": "International Film Festival",
+    "date_of_event": "November 10-15, 2023",
+    "location": "Cinema Royale, London",
+    "image_url": "https://i.ibb.co/7GkPxXZ/christian-smith-Qh-Bh-XFe-B0cw-unsplash.jpg",
+    "description": "Explore the world of cinema with a showcase of the finest international films. A cinematic journey awaits!",
+    "availability": 950,
+    "demand": "Moderate"
+  },
+  {
+    "id": 5,
+    "event_name": "Soccer Championship Final",
+    "date_of_event": "October 30, 2023",
+    "location": "Stadium One, Barcelona",
+    "image_url": "https://i.ibb.co/DKBCbRR/vienna-reyes-q-Cr-KTET-09o-unsplash.jpg",
+    "description": "Witness the thrilling conclusion of the soccer season as the best teams compete for the championship title.",
+    "availability": 850,
+    "demand": "High"
+  },
+  {
+    "id": 6,
+    "event_name": "Jazz Under the Stars",
+    "date_of_event": "September 25, 2023",
+    "location": "Jazz Oasis Park, New Orleans",
+    "image_url": "https://i.ibb.co/25Vk75h/dolo-iglesias-z9z6u1rn7s-Y-unsplash.jpg",
+    "description": "Enjoy a magical night of jazz music beneath the starry sky. Unwind with the smoothest tunes.",
+    "availability": 300,
+    "demand": "Moderate"
+  },
+  {
+    "id": 7,
+    "event_name": "Acoustic Folk Night",
+    "date_of_event": "November 8, 2023",
+    "location": "Harmony Hall, Nashville",
+    "image_url": "https://i.ibb.co/5r6Thrd/karori-production-bwn72-GDipis-unsplash.jpg",
+    "description": "Immerse yourself in the soulful melodies of acoustic folk artists in an intimate setting.",
+    "availability": 50,
+    "demand": "Low"
+  },
+  {
+    "id": 8,
+    "event_name": "Magic Show Extravaganza",
+    "date_of_event": "December 2, 2023",
+    "location": "Mystique Theater, Las Vegas",
+    "image_url": "https://i.ibb.co/NxL40Jp/almos-bechtold-AJ-Mou1-FUS8-unsplash.jpg",
+    "description": "Prepare to be amazed by mind-bending illusions and spectacular magic acts!",
+    "availability": 950,
+    "demand": "Moderate"
+  },
+  {
+    "id": 9,
+    "event_name": "Indie Music Showcase",
+    "date_of_event": "October 15, 2023",
+    "location": "The Indie Garage, Austin",
+    "image_url": "https://i.ibb.co/ZdJ9jyb/john-matychuk-g-UK3l-A3-K7-Yo-unsplash.jpg",
+    "description": "Discover the next big indie music talents in a night of indie music celebration.",
+    "availability": 1200,
+    "demand": "Low"
+  },
+  {
+    "id": 10,
+    "event_name": "Classic Movie Night - \"Casablanca\"",
+    "date_of_event": "November 18, 2023",
+    "location": "Retro Cinema, Paris",
+    "image_url": "https://i.ibb.co/VBs27cb/zhifei-zhou-XO4-A1p-WBEb-E-unsplash.jpg",
+    "description": "Relive the golden age of cinema with a special screening of the timeless classic \"Casablanca.\"",
+    "availability": 300,
+    "demand": "Moderate"
+  }
+]
