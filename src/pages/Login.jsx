@@ -2,12 +2,35 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import swal from "sweetalert";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const navigate = useNavigate(null);
   const location = useLocation();
   // const navigate = useNavigate(null);
   const { logIn } = useContext(AuthContext);
+  const notifySuccess = () =>
+    toast.success("Logged in Successful", {
+      position: "top-center",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  const notifyError = (error) =>
+    toast.error(error, {
+      position: "top-center",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -15,16 +38,19 @@ const Login = () => {
     console.log(email, password);
     logIn(email, password)
       .then((result) => {
-        swal(
-          "Logged in Successful",
-          "You are one step away of your events ",
-          "success"
-        );
+        // swal(
+        //   "Logged in Successful",
+        //   "You are one step away of your events ",
+        //   "success"
+        // );
+
+        notifySuccess();
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.error(error);
-        swal("Try again", "Incorrect Email /S Password ", "error");
+        // swal("Try again", "Incorrect Email / Password ", "error");
+        notifyError(error.message);
       });
   };
 

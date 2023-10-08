@@ -5,8 +5,31 @@ import { FcGoogle } from "react-icons/fc";
 
 import swal from "sweetalert";
 import { updateProfile } from "firebase/auth";
+import { toast } from "react-toastify";
 
 const Register = () => {
+  const notifySuccess = () =>
+    toast.success("Account Created Successfully", {
+      position: "top-center",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  const notifyError = (error) =>
+    toast.error(error, {
+      position: "top-center",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
   const [errorText, setErrorText] = useState(null);
   const { signUp, googleSignIn } = useContext(AuthContext);
   const navigate = useNavigate(null);
@@ -19,21 +42,24 @@ const Register = () => {
     const photo = e.target.photo.value;
     // console.log(email, password);
     if (password.length < 6) {
-      swal("Try Agin", "Password must be at least 6 characters ", "error");
+      // swal("Try Agin", "Password must be at least 6 characters ", "error");
+      notifyError("Password must be at least 6 characters");
       return;
     } else if (!/^(?=.*[A-Z])/.test(password)) {
-      swal(
-        "Try Again",
-        "Password must contain at least one Upper Case letter  ",
-        "error"
-      );
+      // swal(
+      //   "Try Again",
+      //   "Password must contain at least one Upper Case letter  ",
+      //   "error"
+      // );
+      notifyError("Password must contain at least one Upper Case letter");
       return;
     } else if (!/[!@#$%^&*()_+\-=\[\]{};':",.<>?]/.test(password)) {
-      swal(
-        "Try Again",
-        "Password must contain at least one special character  ",
-        "error"
-      );
+      // swal(
+      //   "Try Again",
+      //   "Password must contain at least one special character  ",
+      //   "error"
+      // );
+      notifyError("Password must contain at least one special character");
       return;
     }
     signUp(email, password)
@@ -46,17 +72,19 @@ const Register = () => {
           .then(() => console.log("profile updated"))
           .catch();
 
-        swal(
-          "Account Created",
-          "You are one step away of your events ",
-          "success"
-        );
+        // swal(
+        //   "Account Created",
+        //   "You are one step away of your events ",
+        //   "success"
+        // );
+        notifySuccess();
         navigate("/");
       })
       .catch((error) => {
         console.error(error);
         setErrorText(error.message);
-        swal("Error", errorText, "error");
+        // swal("Error", errorText, "error");
+        notifyError(error.message);
       });
     // console.log(errora);
   };
