@@ -5,7 +5,7 @@ const Event = ({ event }) => {
     location,
     image_url,
     description,
-    availability,
+
     demand,
   } = event || {};
   return (

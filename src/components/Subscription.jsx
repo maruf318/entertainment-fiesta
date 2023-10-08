@@ -7,6 +7,10 @@
 //   Tooltip,
 // } from "@material-tailwind/react";
 // import { FaBeer } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 const Subscription = () => {
   return (
     // <div className=" m-2 grid md:grid-cols-3 gap-6">
@@ -196,11 +200,12 @@ const Subscription = () => {
                 md:text-[40px]
                 text-white
                 mb-4
+                underline
                 "
                   >
                     Our Subscription
                   </h2>
-                  <p className="text-base text-body-color">
+                  <p className="text-base text-white">
                     if you are really looking to get free tickets every month
                     for premium live events then this subscription is only for
                     you.
@@ -209,7 +214,11 @@ const Subscription = () => {
               </div>
             </div>
             <div className="flex flex-wrap justify-center -mx-4">
-              <div className="w-full md:w-1/2 lg:w-1/3 px-4">
+              <div
+                className="w-full md:w-1/2 lg:w-1/3 px-4"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <div
                   className="
              bg-purple-200
@@ -559,7 +568,11 @@ const Subscription = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-1/3 px-4">
+              <div
+                className="w-full md:w-1/2 lg:w-1/3 px-4"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 <div
                   className="
                   bg-purple-200
@@ -913,7 +926,11 @@ const Subscription = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-1/3 px-4">
+              <div
+                className="w-full md:w-1/2 lg:w-1/3 px-4"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
                 <div
                   className="
                   bg-purple-200
