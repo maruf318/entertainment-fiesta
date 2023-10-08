@@ -1,9 +1,9 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 
-import swal from "sweetalert";
+// import swal from "sweetalert";
 import { updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
 
@@ -30,7 +30,7 @@ const Register = () => {
       progress: undefined,
       theme: "colored",
     });
-  const [errorText, setErrorText] = useState(null);
+  // const [errorText, setErrorText] = useState(null);
   const { signUp, googleSignIn } = useContext(AuthContext);
   const navigate = useNavigate(null);
 
@@ -53,6 +53,7 @@ const Register = () => {
       // );
       notifyError("Password must contain at least one Upper Case letter");
       return;
+      // eslint-disable-next-line no-useless-escape
     } else if (!/[!@#$%^&*()_+\-=\[\]{};':",.<>?]/.test(password)) {
       // swal(
       //   "Try Again",
@@ -82,7 +83,7 @@ const Register = () => {
       })
       .catch((error) => {
         console.error(error);
-        setErrorText(error.message);
+        // setErrorText(error.message);
         // swal("Error", errorText, "error");
         notifyError(error.message);
       });
@@ -92,16 +93,18 @@ const Register = () => {
     googleSignIn()
       .then((result) => {
         console.log(result.user);
-        swal(
-          "Google Login",
-          "You are one step away of your events ",
-          "success"
-        );
+        // swal(
+        //   "Google Login",
+        //   "You are one step away of your events ",
+        //   "success"
+        // );
+        notifySuccess();
         navigate("/");
       })
       .catch((error) => {
-        setErrorText(error.message);
-        swal("Error", errorText, "error");
+        // setErrorText(error.message);
+        // swal("Error", errorText, "error");
+        notifyError(error.message);
       });
   };
 

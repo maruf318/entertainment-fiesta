@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const Event = ({ event }) => {
   const {
     event_name,
@@ -66,3 +67,6 @@ const Event = ({ event }) => {
 };
 
 export default Event;
+Event.propTypes = {
+  event: PropTypes.object,
+};

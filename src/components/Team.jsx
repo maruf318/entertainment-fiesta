@@ -13,7 +13,7 @@ AOS.init();
 const Team = () => {
   return (
     <div className=" m-2 grid md:grid-cols-3 gap-6">
-      <Card className="" data-aos="fade-right" data-aos-duration="2000">
+      <Card className="" data-aos="zoom-in">
         <CardHeader floated={false} className="">
           <img
             className="h-[300px] w-full p-3"
@@ -65,7 +65,7 @@ const Team = () => {
           </Tooltip>
         </CardFooter>
       </Card>
-      <Card className="" data-aos="fade-down" data-aos-duration="2000">
+      <Card className="" data-aos="zoom-in">
         <CardHeader floated={false} className="">
           <img
             className="h-[300px] p-3"
@@ -117,7 +117,7 @@ const Team = () => {
           </Tooltip>
         </CardFooter>
       </Card>
-      <Card data-aos="fade-left" data-aos-duration="2000">
+      <Card data-aos="zoom-in">
         <CardHeader floated={false} className="rounded-lg">
           <img
             className="h-[300px] rounded-lg p-3 w-full"

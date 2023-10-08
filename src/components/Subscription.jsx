@@ -214,11 +214,7 @@ const Subscription = () => {
               </div>
             </div>
             <div className="flex flex-wrap justify-center -mx-4">
-              <div
-                className="w-full md:w-1/2 lg:w-1/3 px-4"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              >
+              <div className="w-full md:w-1/2 lg:w-1/3 px-4" data-aos="zoom-in">
                 <div
                   className="
              bg-purple-200
@@ -568,11 +564,7 @@ const Subscription = () => {
                   </div>
                 </div>
               </div>
-              <div
-                className="w-full md:w-1/2 lg:w-1/3 px-4"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-              >
+              <div className="w-full md:w-1/2 lg:w-1/3 px-4" data-aos="zoom-in">
                 <div
                   className="
                   bg-purple-200
@@ -926,11 +918,7 @@ const Subscription = () => {
                   </div>
                 </div>
               </div>
-              <div
-                className="w-full md:w-1/2 lg:w-1/3 px-4"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
+              <div className="w-full md:w-1/2 lg:w-1/3 px-4" data-aos="zoom-in">
                 <div
                   className="
                   bg-purple-200

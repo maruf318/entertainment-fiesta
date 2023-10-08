@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
-import swal from "sweetalert";
+// import swal from "sweetalert";
 import { toast } from "react-toastify";
 
 const Login = () => {
@@ -37,7 +37,7 @@ const Login = () => {
     const password = e.target.password.value;
     console.log(email, password);
     logIn(email, password)
-      .then((result) => {
+      .then(() => {
         // swal(
         //   "Logged in Successful",
         //   "You are one step away of your events ",

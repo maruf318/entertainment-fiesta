@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import pic from "../assets/entertainment.png";
+import icon from "../assets/icons8-user.gif";
 
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
@@ -20,16 +22,20 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          className={
-            "bg-transparent border-t-4 hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F]  font-bold"
-          }
-          to={"/register"}
-        >
-          Register
-        </NavLink>
-      </li>
+      {user ? (
+        ""
+      ) : (
+        <li>
+          <NavLink
+            className={
+              "bg-transparent border-t-4 hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F]  font-bold"
+            }
+            to={"/register"}
+          >
+            Register
+          </NavLink>
+        </li>
+      )}
       <li>
         <NavLink
           className={
@@ -102,7 +108,7 @@ const Navbar = () => {
         </div>
         <a className=" flex  text-[#CB0C9F] font-bold normal-case text-xl">
           <span className="flex">
-            <img src="/src/assets/icons8-entertainment-64.png" alt="" />
+            <img src={pic} alt="" />
           </span>
           ENTERTAINMENT <br />
           FIESTA{" "}
@@ -126,7 +132,7 @@ const Navbar = () => {
               {user?.photoURL ? (
                 <img src={user.photoURL} />
               ) : (
-                <img src="../../public/icons8-user.gif" />
+                <img src={icon} />
               )}
               {/* <img src="../../public/icons8-user.gif" /> */}
             </div>
