@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>Explanation: First of all, we declared a variable "greeting" but we have not declared anything about "greetign". but we assigned a empty object for greetign which was not defined. Since greetign is not defined, we get a ReferenceError </i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>Explanation: The function attempts to add a number and a string, which results in concatenation, not addition, so it returns the string "12"</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>Explanation: The code initializes an array food with food emojis and an object info with a property favoriteFood set to "🍕". Changing info.favoriteFood to "🍝" has no impact on the original food array, resulting in the output being ['🍕', '🍫', '🥑', '🍔']</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>Explanation: sayHi function expects a name parameter to be passed. It expects an argument, and since we don't provide one, the parameter takes the value of undefined</i>
 
 </p>
 </details>
@@ -122,9 +122,10 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>Explanation: Here forEach loop iterates through the nums array and for each element it
+add the value by 1 excepts for the element 0. inside forEach there is a if statements which checks if its true or false, Since 0 Is falsy so we only get three iterations. So, the ANSWER IS C:3 </i>
 
 </p>
 </details>
