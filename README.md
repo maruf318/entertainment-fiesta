@@ -1,8 +1,11 @@
-# React + Vite
+# Website Name: Entertainment Fiesta
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Site link:
+Features and functionalities of Entertainment Fiesta:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User can look for Entertainment events
+- Almost 9 Entertainment services available to choose from, User can view details after login.
+- If a User is logged in, then he/she will be able to see extra features of the webpage.
+- responsive for mobile and tablets
+- User can look for upcoming events happening in certain locations
+- Subscription section can help user to choose the best plan
