@@ -60,9 +60,9 @@ const Navbar = () => {
             className={
               "bg-transparent border-t-4 hover:bg-white rounded-lg px-2 py-4 text-[#CB0C9F] font-bold"
             }
-            to={"/support"}
+            to={"/review"}
           >
-            Support
+            Review
           </NavLink>
         </li>
       ) : (

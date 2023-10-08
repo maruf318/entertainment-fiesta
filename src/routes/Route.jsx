@@ -7,7 +7,8 @@ import Error from "../components/Error";
 import CardDetails from "../components/CardDetails";
 import PrivateRoute from "./PrivateRoute";
 import Faq from "../pages/Faq";
-import Support from "../pages/Support";
+
+import Review from "../pages/Review";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,8 +33,8 @@ const router = createBrowserRouter([
         element: <Faq></Faq>,
       },
       {
-        path: "/support",
-        element: <Support />,
+        path: "/review",
+        element: <Review />,
       },
       {
         path: "/products/:id",

@@ -1,10 +1,10 @@
 const Faq = () => {
   return (
-    <div>
-      <h2 className="text-4xl my-6 text-center text-white font-bold">
+    <div className="max-w-7xl mx-auto">
+      <h2 className=" my-6 text-center text-white font-bold text-4xl border-y-2 py-3">
         Frequent Asked Questions
       </h2>
-      <div className="flex p-3 flex-col md:flex-row max-w-7xl mx-auto">
+      <div className="flex p-3 flex-col md:flex-row">
         <div className="flex-1">
           <div className="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" checked="checked" />
