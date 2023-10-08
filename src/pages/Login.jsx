@@ -1,10 +1,12 @@
 import { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import swal from "sweetalert";
 
 const Login = () => {
   const navigate = useNavigate(null);
+  const location = useLocation();
+  // const navigate = useNavigate(null);
   const { logIn } = useContext(AuthContext);
   const handleLogin = (e) => {
     e.preventDefault();
@@ -18,7 +20,7 @@ const Login = () => {
           "You are one step away of your events ",
           "success"
         );
-        navigate("/");
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.error(error);
