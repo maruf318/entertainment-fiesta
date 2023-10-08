@@ -38,7 +38,6 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>Answer</b></summary>
 <p>
 
 #### Answer: C
@@ -46,7 +45,6 @@ sum(1, "2");
 <i>Explanation: The function attempts to add a number and a string, which results in concatenation, not addition, so it returns the string "12"</i>
 
 </p>
-</details>
 
 ###### 3. Write the `correct answer` from the following options and give an explanation (2-5 lines).
 
@@ -64,7 +62,6 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
 <p>
 
 #### Answer: A
@@ -72,7 +69,6 @@ console.log(food);
 <i>Explanation: The code initializes an array food with food emojis and an object info with a property favoriteFood set to "🍕". Changing info.favoriteFood to "🍝" has no impact on the original food array, resulting in the output being ['🍕', '🍫', '🥑', '🍔']</i>
 
 </p>
-</details>
 
 ###### 4. Write the `correct answer` from the following options and give an explanation (2-5 lines).
 
@@ -89,7 +85,6 @@ console.log(sayHi());
 - C: `Hi there, null`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
 <p>
 
 #### Answer: B
@@ -97,7 +92,6 @@ console.log(sayHi());
 <i>Explanation: sayHi function expects a name parameter to be passed. It expects an argument, and since we don't provide one, the parameter takes the value of undefined</i>
 
 </p>
-</details>
 
 ###### 5. Write the `correct answer` from the following options and give an explanation (2-5 lines).
 
@@ -117,7 +111,6 @@ console.log(count);
 - C: 3
 - D: 4
 
-<details><summary><b>Answer</b></summary>
 <p>
 
 #### Answer: C
@@ -126,4 +119,3 @@ console.log(count);
 add the value by 1 excepts for the element 0. inside forEach there is a if statements which checks if its true or false, Since 0 Is falsy so we only get three iterations. So, the ANSWER IS C:3 </i>
 
 </p>
-</details>
