@@ -111,29 +111,39 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="space-x-3  menu-horizontal px-1">{navLinks}</ul>
       </div>
-      <div className="navbar-end space-x-3">
-        <div className="avatar">
-          <div className="w-12 rounded-full ">
-            {user?.photoURL ? (
-              <img src={user.photoURL} />
-            ) : (
-              <img src="../../public/icons8-user.gif" />
-            )}
-            {/* <img src="../../public/icons8-user.gif" /> */}
-          </div>
-        </div>
-        {user ? (
-          <button
-            onClick={handleLogOut}
-            className="btn bg-transparent text-[#CB0C9F]"
-          >
-            LOGOUT
-          </button>
+      <div className="navbar-end grid space-y-2 items-center content-center ">
+        {user?.displayName ? (
+          <p className="text-[#CB0C9F] text-center">
+            Welcome, {user.displayName}
+          </p>
         ) : (
-          <Link to={"/login"}>
-            <a className="btn bg-transparent text-[#CB0C9F]">Sign In</a>
-          </Link>
+          ""
         )}
+
+        <div className="justify-center space-x-3 items-center mx-auto flex">
+          <div className="avatar">
+            <div className="w-12 rounded-full ">
+              {user?.photoURL ? (
+                <img src={user.photoURL} />
+              ) : (
+                <img src="../../public/icons8-user.gif" />
+              )}
+              {/* <img src="../../public/icons8-user.gif" /> */}
+            </div>
+          </div>
+          {user ? (
+            <button
+              onClick={handleLogOut}
+              className="btn bg-transparent text-[#CB0C9F]"
+            >
+              LOGOUT
+            </button>
+          ) : (
+            <Link to={"/login"}>
+              <a className="btn bg-transparent text-[#CB0C9F]">Sign In</a>
+            </Link>
+          )}
+        </div>
         {/* <Link to={"/login"}>
           <a className="btn bg-transparent text-[#CB0C9F]">Sign In</a>
         </Link>
