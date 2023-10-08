@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRoute";
 import Faq from "../pages/Faq";
 
 import Review from "../pages/Review";
+import Events from "../pages/Events";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/review",
         element: <Review />,
+      },
+      {
+        path: "/events",
+        element: <Events></Events>,
       },
       {
         path: "/products/:id",

@@ -277,7 +277,7 @@ const Subscription = () => {
                 text-base
                 font-semibold
                 text-pink-900
-                bg-transparent
+               
                 bg-pink-400
                 rounded-md
                 text-center
@@ -917,6 +917,7 @@ const Subscription = () => {
                 <div
                   className="
                   bg-purple-200
+                  
              rounded-xl
              relative
              z-10
@@ -929,6 +930,7 @@ const Subscription = () => {
              lg:py-10 lg:px-6
              xl:p-12
              mb-10
+             
              "
                 >
                   <span className="text-primary font-semibold text-lg block mb-4">
@@ -981,7 +983,7 @@ const Subscription = () => {
                 text-base
                 font-semibold
                 
-                bg-transparent
+            
                 border border-[#D4DEFF]
                 rounded-md
                 text-center

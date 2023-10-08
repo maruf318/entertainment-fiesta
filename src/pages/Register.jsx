@@ -1,13 +1,14 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import { FcGoogle } from "react-icons/fc";
 
 import swal from "sweetalert";
 import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const [errorText, setErrorText] = useState(null);
-  const { signUp } = useContext(AuthContext);
+  const { signUp, googleSignIn } = useContext(AuthContext);
   const navigate = useNavigate(null);
 
   const handleRegister = (e) => {
@@ -41,11 +42,27 @@ const Register = () => {
       });
     // console.log(errora);
   };
+  const handleGoogle = () => {
+    googleSignIn()
+      .then((result) => {
+        console.log(result.user);
+        swal(
+          "Google Login",
+          "You are one step away of your events ",
+          "success"
+        );
+        navigate("/");
+      })
+      .catch((error) => {
+        setErrorText(error.message);
+        swal("Error", errorText, "error");
+      });
+  };
 
   return (
     <div>
       <div className="hero min-h-screen bg-gradient-to-t from-black via-purple-500 to-pink-300">
-        <div className="">
+        <div className="pb-8">
           <div className="text-center my-8 ">
             <h1 className="text-5xl font-bold text-white">Register now!</h1>
             <p className="py-6 text-white">
@@ -121,6 +138,12 @@ const Register = () => {
                 </Link>
               </p>
             </form>
+            <button
+              onClick={handleGoogle}
+              className="btn capitalize w-1/2 mx-auto text-black mb-4"
+            >
+              Sign In using Google <FcGoogle></FcGoogle>
+            </button>
           </div>
         </div>
       </div>
