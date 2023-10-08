@@ -42,7 +42,7 @@ sum(1, "2");
 
 #### Answer: C
 
-<i>Explanation: The function attempts to add a number and a string, which results in concatenation, not addition, so it returns the string "12"</i>
+<i>Explanation: The function attempts to add a number and a string, which results in concatenation, not addition, so it returns the string "12". In other words, In JavaScript, when we add a number and a string, it performs string concatenation. So, 1 (a number) and "2" (a string) will be concatenated to form the string "12"</i>
 
 </p>
 
