@@ -1,6 +1,6 @@
 # Website Name: Entertainment Fiesta
 
-Live Site link:
+Live Site link: https://entertainment-fiesta.web.app/
 Features and functionalities of Entertainment Fiesta:
 
 - User can look for Entertainment events
