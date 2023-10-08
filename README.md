@@ -10,3 +10,5 @@ Features and functionalities of Entertainment Fiesta:
 - responsive for mobile and tablets
 - User can look for upcoming events happening in certain locations
 - Subscription section can help user to choose the best plan
+
+Note: Please check question-answer.md for the answers of the assignment questions.
