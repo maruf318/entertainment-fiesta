@@ -15,7 +15,6 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>Answer</b></summary>
 <p>
 
 #### Answer: B
@@ -23,7 +22,6 @@ console.log(greetign);
 <i>Explanation: First of all, we declared a variable "greeting" but we have not declared anything about "greetign". but we assigned a empty object for greetign which was not defined. Since greetign is not defined, we get a ReferenceError </i>
 
 </p>
-</details>
 
 ###### 2. Write the `correct answer` from the following options and give an explanation (2-5 lines).
 
