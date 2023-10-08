@@ -17,7 +17,25 @@ const Register = () => {
     const password = e.target.password.value;
     const name = e.target.name.value;
     const photo = e.target.photo.value;
-    console.log(email, password);
+    // console.log(email, password);
+    if (password.length < 6) {
+      swal("Try Agin", "Password must be at least 6 characters ", "error");
+      return;
+    } else if (!/^(?=.*[A-Z])/.test(password)) {
+      swal(
+        "Try Again",
+        "Password must contain at least one Upper Case letter  ",
+        "error"
+      );
+      return;
+    } else if (!/[!@#$%^&*()_+\-=\[\]{};':",.<>?]/.test(password)) {
+      swal(
+        "Try Again",
+        "Password must contain at least one special character  ",
+        "error"
+      );
+      return;
+    }
     signUp(email, password)
       .then((result) => {
         console.log(result.user);

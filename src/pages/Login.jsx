@@ -22,7 +22,7 @@ const Login = () => {
       })
       .catch((error) => {
         console.error(error);
-        swal("Try again", "Incorrect Email or Password ", "error");
+        swal("Try again", "Incorrect Email /S Password ", "error");
       });
   };
 
