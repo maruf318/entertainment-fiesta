@@ -1,6 +1,6 @@
 const Review = () => {
   return (
-    <div className="max-w-7xl mx-auto md:h-[100vh]">
+    <div className="max-w-7xl mx-auto ">
       <div>
         <h2 className="text-4xl border-y-2 py-3 text-center text-white my-8 font-bold">
           Customer Reviews

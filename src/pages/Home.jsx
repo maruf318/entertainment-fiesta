@@ -4,7 +4,7 @@ import Banner from "../components/Banner";
 import Cards from "../components/Cards";
 import Team from "../components/Team";
 import Subscription from "../components/Subscription";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
@@ -30,7 +30,6 @@ const Home = () => {
         </h2>
         <Team></Team>
       </div>
-      <Footer></Footer>
     </div>
   );
 };
