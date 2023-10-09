@@ -11,7 +11,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 const Home = () => {
   const services = useLoaderData();
-  // console.log(services);
+  console.log(services);
   return (
     <div>
       <Banner></Banner>

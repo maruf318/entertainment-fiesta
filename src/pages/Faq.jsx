@@ -1,3 +1,4 @@
+import human from "../assets/human.png";
 const Faq = () => {
   return (
     <div className="max-w-7xl mx-auto">
@@ -113,7 +114,7 @@ const Faq = () => {
           </div>
         </div>
         <div className="flex-1 mx-auto justify-center items-center flex">
-          <img src="/src/assets/The Little Things - UI Design.png" alt="" />
+          <img src={human} alt="" />
         </div>
       </div>
     </div>

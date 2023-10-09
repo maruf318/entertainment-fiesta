@@ -19,6 +19,17 @@ const Register = () => {
       progress: undefined,
       theme: "colored",
     });
+  const notifyRegisterSuccess = () =>
+    toast.success("Account Created. Please Login Now", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
   const notifyError = (error) =>
     toast.error(error, {
       position: "top-center",
@@ -31,7 +42,7 @@ const Register = () => {
       theme: "colored",
     });
   // const [errorText, setErrorText] = useState(null);
-  const { signUp, googleSignIn } = useContext(AuthContext);
+  const { signUp, googleSignIn, logOut } = useContext(AuthContext);
   const navigate = useNavigate(null);
 
   const handleRegister = (e) => {
@@ -78,8 +89,10 @@ const Register = () => {
         //   "You are one step away of your events ",
         //   "success"
         // );
-        notifySuccess();
-        navigate("/");
+        notifyRegisterSuccess();
+        logOut().then().catch();
+
+        navigate("/login");
       })
       .catch((error) => {
         console.error(error);

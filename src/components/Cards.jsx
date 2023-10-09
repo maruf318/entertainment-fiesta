@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 const Cards = ({ service }) => {
-  const { image_url, service_name, price, id } = service || {};
+  const { image_url, service_name, price, id, short_description } =
+    service || {};
+  // console.log(service);
   return (
     <div className="card bg-white shadow-xl m-2">
       <figure>
@@ -9,6 +11,7 @@ const Cards = ({ service }) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title text-2xl font-bold">{service_name}</h2>
+        <small className="text-black">Description: {short_description}</small>
         <p className="text-xl font-semibold">Price: {price}</p>
         <div className=" w-full ">
           <Link
@@ -25,5 +28,5 @@ const Cards = ({ service }) => {
 
 export default Cards;
 Cards.propTypes = {
-  service: PropTypes.node,
+  service: PropTypes.array,
 };
