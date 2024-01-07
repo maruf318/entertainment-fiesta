@@ -140,7 +140,7 @@ const Navbar = () => {
           {user ? (
             <button
               onClick={handleLogOut}
-              className="btn bg-transparent text-[#CB0C9F]"
+              className="btn btn-sm bg-transparent text-[#CB0C9F]"
             >
               LOGOUT
             </button>
